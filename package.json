@@ -1,0 +1,29 @@
+{
+  "name": "app-email-preparer",
+  "version": "1.0.0",
+  "description": "Fetch a URL and prepare it for use as an email.",
+  "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "express",
+    "email"
+  ],
+  "author": "Rob Knight",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "compression": "^1.7.4",
+    "config": "^3.3.4",
+    "express": "^4.17.1",
+    "inline-css": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
