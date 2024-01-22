@@ -1,6 +1,6 @@
 {
   "name": "app-html-to-email",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fetch a URL and prepare it for use as an email.",
   "main": "index.js",
   "engines": {
