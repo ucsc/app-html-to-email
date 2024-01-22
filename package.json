@@ -1,5 +1,5 @@
 {
-  "name": "app-email-preparer",
+  "name": "app-html-to-email",
   "version": "1.0.0",
   "description": "Fetch a URL and prepare it for use as an email.",
   "main": "index.js",
@@ -20,7 +20,10 @@
     "cheerio": "^1.0.0-rc.12",
     "compression": "^1.7.4",
     "config": "^3.3.4",
+    "ejs": "^3.1.9",
     "express": "^4.17.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
     "inline-css": "^4.0.2"
   },
   "devDependencies": {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Email preparer</title>
+    <!-- Minified version -->
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <style>
+      h1 {
+        margin-bottom: .25em;
+      }
+
+      p {
+        margin-bottom: .25em;
+      }
+
+      ol {
+        margin-bottom: 1.5em;
+      }
+
+      .flash {
+        background-color: crimson;
+        border-radius: 4px;
+        padding: 2ch;
+        color: white;
+      }
+
+      .flash p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Fetch and prepare a webpage to send as an email</h1>
+
+    <% if (messages.info) { %>
+      <div class="flash">
+        <% messages.info.forEach(function(message) { %>
+          <p>
+            <%= message %>
+          </p>
+          <% }) %>
+      </div>
+      <% } %>
+
+        <p>There are two ways to use this app:</p>
+
+        <ol>
+          <li>Fill out the form below.</li>
+          <li>In your browser's URL bar, add <code style="padding:.5ch; background-color:yellow;">?url=</code> followed
+            by a
+            Tuesday Newsday URL to get the
+            prepared code, or enter a URL into the form below.</li>
+        </ol>
+
+        <div>
+          <form action="/" method="get">
+            <label for="url">
+              URL
+              <input type="text" id="url" name="url" />
+              <button type="submit">Fetch it!</button>
+            </label>
+          </form>
+        </div>
+  </body>
+
+</html>
